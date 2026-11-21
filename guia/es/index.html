@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!-- guía de site-inspirado (generada a partir de la plantilla projetos-landing-guia).
+     TRILINGÜE: este archivo es la versión PT (guia/index.html). Las versiones guia/en/index.html y
+     guia/es/index.html son copias traducidas: lang="en"/"es", selector con a.on en el idioma,
+     hrefs del selector ../ y ../es/ (o ../en/), e imágenes assets/ -> ../assets/. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>site-inspirado — tu referencia se convierte en el estilo del sitio</title>
+<meta name="description" content="Kit y skill para crear sitios con identidad propia: las referencias se convierten en un estilo definido, la IA pregunta antes de generar, Codex crea imágenes con un estilo uniforme y una prueba verifica el botón antes de publicar.">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/site-inspirado/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/site-inspirado/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/site-inspirado/guia/es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;height:auto;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+  nav .brand,nav .links a{white-space:nowrap}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">🎨</span> site-inspirado</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#oque">Qué es</a>
+    <a class="sec" href="#guia">Guía de uso</a>
+    <a class="sec" href="#exemplos">Ejemplos</a>
+    <a class="sec" href="#medida">Visual × conversión</a>
+    <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+    <a class="btn" href="https://github.com/inematds/site-inspirado" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">Kit + skill · sitios con IA</span>
+      <h1>Tu referencia se convierte en el <span class="amb">estilo</span> del sitio</h1>
+      <p class="lead">Reúne de 2 a 5 imágenes que te gusten. La IA pregunta antes de generar, crea todas las imágenes con el mismo estilo, arma la página con movimiento y comprueba si el visitante todavía encuentra el botón.</p>
+      <div class="cta">
+        <a class="btn" href="#guia">Empezar la guía</a>
+        <a class="btn ghost" href="https://github.com/inematds/site-inspirado" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+    </div>
+    <figure><img src="../assets/banner-es.jpg" alt="Banner de site-inspirado: referencias impresas sobre la mesa se convierten en una página web"></figure>
+  </div>
+</header>
+
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">En resumen</span>
+  <p>site-inspirado es un kit con una skill para Claude Code que crea sitios que no parecen «hechos por IA». Le das imágenes de referencia (de Pinterest, de una invitación ya impresa o de una foto del local) y la IA hace preguntas e investiga antes de generar cualquier cosa. Después analiza el estilo de esas imágenes, genera las imágenes del sitio con ese mismo estilo mediante Codex y arma la página con transiciones. Al final, una prueba automática comprueba que el botón principal aparezca y que la página funcione en el celular. Para usarlo, necesitas Claude Code, Codex con tu sesión iniciada mediante tu suscripción, Python y Node.</p>
+</div></section>
+
+<section id="oque"><div class="wrap">
+  <span class="chip">Qué es</span>
+  <h2>El proceso es lo que marca la diferencia, no el código</h2>
+  <p class="sub">Pedir «haz un sitio bonito» da como resultado el mismo sitio de siempre. Aportar referencias, responder preguntas y revisar el resultado da como resultado un sitio con identidad propia.</p>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-es.jpg" alt="Las seis etapas de site-inspirado: referencias, preguntas, estilo definido, imágenes con ese estilo, movimiento y prueba final" loading="lazy" style="width:100%;display:block"></figure>
+  <div class="grid g3">
+    <div class="card"><h3>🎯 Preguntas antes de generar</h3><p>Un guion de preguntas para cada tipo de sitio (evento, negocio, servicio, portafolio). Lo que la persona no responde se investiga o se deja fuera.</p></div>
+    <div class="card"><h3>🖌️ Estilo definido</h3><p><code>estilo.py</code> extrae la paleta de las referencias y calcula el contraste. Todas las imágenes reciben el mismo prompt de estilo y las mismas referencias.</p></div>
+    <div class="card"><h3>✅ Prueba antes de publicar</h3><p><code>portao.js</code> abre la página en una computadora y en un celular, y bloquea el sitio si oculta el botón, falla o ignora la opción «reducir movimiento».</p></div>
+  </div>
+</div></section>
+
+<section id="fluxo"><div class="wrap">
+  <span class="chip">Cómo funciona</span>
+  <h2>Seis etapas, una revisión en cada una</h2>
+  <p class="sub">Ninguna etapa comienza sin que se haya aprobado la anterior. La guía de abajo tiene 8 pasos: instalar, estas 6 etapas (pasos 2 a 7) y publicar. La «prueba final» es la comprobación automática del último paso.</p>
+  <div class="flow">
+    <span>refs/</span><span class="arr">→</span>
+    <span>BRIEF.md</span><span class="arr">→</span>
+    <span>estilo.json</span><span class="arr">→</span>
+    <span>img/ + hoja.jpg</span><span class="arr">→</span>
+    <span>index.html</span><span class="arr">→</span>
+    <span>prueba: APROBADO</span>
+  </div>
+</div></section>
+
+<section id="pre"><div class="wrap">
+  <span class="chip">Requisitos</span>
+  <h2>Qué necesitas tener instalado</h2>
+  <p class="sub">Funciona en Linux y Mac (en Windows, usa WSL, Linux dentro de Windows). Todo se ejecuta en tu máquina. Las imágenes se generan con Codex mediante tu suscripción, sin clave de API.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Codex CLI con sesión iniciada</h3><p>Genera las imágenes con <code>image_gen</code> (el generador de imágenes de Codex), adjuntando las referencias. El script ejecuta Codex sin pedir confirmación para cada imagen (<code>--dangerously-bypass-approvals-and-sandbox</code>): úsalo en una carpeta dedicada solo al sitio.</p><pre><span class="k">npm i -g @openai/codex</span>   <span class="c"># instala (si aparece el error EACCES: antepón sudo)</span>
+<span class="k">codex login</span>              <span class="c"># inicia sesión con tu cuenta de ChatGPT</span>
+<span class="k">codex login status</span>       <span class="c"># comprueba el estado</span></pre></div>
+    <div class="card"><h3>Python 3 + Pillow</h3><p>Analiza la paleta y crea la hoja de contacto.</p><pre><span class="k">python3 -m pip install --user pillow</span>
+<span class="c"># si aparece "externally-managed-environment":</span>
+<span class="k">sudo apt install python3-pil</span>   <span class="c"># Ubuntu/Debian</span>
+<span class="k">brew install pillow</span>            <span class="c"># Mac</span>
+<span class="k">python3 -c</span> <span class="s">"import PIL"</span>  <span class="c"># comprueba</span></pre></div>
+    <div class="card"><h3>Node 18+ y GitHub CLI</h3><p>Instala primero Node (npm, que Codex necesita, viene incluido) y Git. Node ejecuta la prueba final, que abre la página en un navegador sin ventana, instalado en el paso 1. <code>gh</code> publica en el paso 8.</p><pre><span class="k">brew install node git gh</span>   <span class="c"># Mac (o nodejs.org)</span>
+<span class="k">sudo apt install nodejs npm git gh</span>   <span class="c"># Ubuntu/Debian</span>
+<span class="k">node -v</span>             <span class="c"># 18 o superior</span>
+<span class="k">gh auth login</span>      <span class="c"># gh: cli.github.com</span></pre></div>
+  </div>
+</div></section>
+
+<section id="guia"><div class="wrap">
+  <span class="chip">Guía de uso · paso a paso</span>
+  <h2>Desde cero hasta publicar el sitio</h2>
+  <p class="sub"><code>T</code> es la carpeta de tu sitio (una por sitio). <code>S</code> es la carpeta de la skill. Los pasos 3 y 6 se hacen conversando con Claude Code; los demás son comandos en la terminal.</p>
+
+  <div class="step"><div class="b">1</div><div>
+    <h3>Instala la skill</h3>
+    <p>Clona el repositorio y conecta la skill con Claude Code. <code>$T</code> es la carpeta <code>mi-sitio</code> dentro de tu carpeta personal: las referencias van en <code>mi-sitio/refs</code>. <code>S</code> y <code>T</code> solo sirven en la terminal donde las creaste: en una terminal nueva, vuelve a ejecutar la tercera línea. Ejecuta estas líneas en la carpeta donde quieras guardar el kit (<code>ln -s</code> usa la carpeta actual).</p>
+<pre><span class="k">git clone https://github.com/inematds/site-inspirado</span>
+<span class="k">mkdir -p ~/.claude/skills && ln -sfn "$PWD/site-inspirado/skill/site-inspirado" ~/.claude/skills/site-inspirado</span>
+<span class="k">S=~/.claude/skills/site-inspirado; T=~/mi-sitio; mkdir -p $T/refs</span>
+<span class="k">cd $S/scripts && npm install && npx playwright install --with-deps chromium && cd -</span>  <span class="c"># navegador de la prueba final</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">2</div><div>
+    <h3>Reúne las referencias</h3>
+    <p>Guarda de 2 a 5 imágenes en <code>$T/refs/</code>: las que ya tienes (invitación, logo, foto del local) y otras de inspiración (en Pinterest, busca «site padaria» o «wedding website watercolor»). También ayuda incluir una imagen de lo que NO quieres.</p>
+  </div></div>
+
+  <div class="step"><div class="b">3</div><div>
+    <h3>Deja que la IA pregunte primero</h3>
+    <p>Abre Claude Code dentro de la carpeta del sitio (así el BRIEF, el estilo y la página quedan en <code>$T</code>) y escribe la frase que cambia el resultado. Las preguntas para cada tipo de sitio están en <code>referencias/perguntas.md</code>; las respuestas se guardan en <code>$T/BRIEF.md</code>, junto con el tipo: <code>negocio</code> (el sitio busca que se realice una acción, como hacer un pedido o reservar una cita) o <code>visual</code> (evento, portafolio: puede tener más movimiento).</p>
+    <p>Los pasos 4, 5 y 7, el <code>cp</code> del paso 6 y el paso 8 se hacen en la terminal: abre una segunda terminal (la primera queda con Claude Code) y ejecuta allí la línea <code>S=…; T=…</code> del paso 1 antes de continuar.</p>
+<pre><span class="c"># en la terminal</span>
+<span class="k">cd $T && claude</span></pre>
+<pre><span class="c"># dentro de Claude Code (escríbelo, no es un comando de terminal)</span>
+<span class="k">/site-inspirado</span> <span class="s">"Quiero el sitio de mi panadería. Antes de generar nada, pregúntame todo lo necesario e investiga qué suele incluir un sitio de este tipo."</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">4</div><div>
+    <h3>Analiza el estilo</h3>
+    <p>El script analiza la paleta de las referencias y sugiere colores de fondo, texto y acento según el contraste calculado. El prompt de estilo describe la técnica, la luz y los colores en inglés: pídele a Claude Code que lo redacte mirando tus referencias. El número con «:1» es el contraste entre el texto y el fondo (por debajo de 4,5:1 cuesta leer).</p>
+<pre><span class="k">python3 $S/scripts/estilo.py $T/refs $T/estilo.json --prompt</span> <span class="s">"honest food photography, warm window light, dark walnut, terracotta"</span>
+<span class="c"># estilo.json: 12 colores · fondo #110a04 · texto #ebdbce (14.55:1) · acento #b07042</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">5</div><div>
+    <h3>Genera las imágenes con un estilo uniforme</h3>
+    <p>Escribe <code>$T/plano.json</code> (una línea por imagen: <code>nome</code>, <code>prompt</code> del tema, <code>largura</code>, <code>altura</code>). Cada imagen usa las 2 primeras referencias (en orden alfabético: pon nombres como <code>1-invitacion.jpg</code> a las más importantes) y la primera imagen generada como modelo (el «ancla»), para que toda la serie conserve el mismo estilo. Al final se crea <code>folha.jpg</code>, una hoja con todas las imágenes una al lado de la otra: revísala y vuelve a generar las que desentonen. No hace falta escribir el JSON a mano: pídele a Claude Code «escribe el plano.json a partir del BRIEF» o copia <code>pilotos/padaria/plano.json</code> y cambia los textos. Cada imagen tarda alrededor de 1 minuto y usa la cuota de tu suscripción de Codex.</p>
+<pre><span class="c"># plano.json: [{"nome": "hero", "prompt": "panes enfriándose sobre la mesa", "largura": 1536, "altura": 1024}, ...]</span>
+<span class="k">python3 $S/scripts/imagens.py $T/plano.json $T/estilo.json $T/img --refs $T/refs</span>
+<span class="k">python3 $S/scripts/imagens.py $T/plano.json $T/estilo.json $T/img --refs $T/refs --so croissant</span>  <span class="c"># vuelve a generar una</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">6</div><div>
+    <h3>Arma la página con movimiento</h3>
+    <p>Pídele a Claude Code: «arma la página con el BRIEF, el estilo y las imágenes». Diseñará una página para el tema y marcará el botón principal (el CTA, la acción que quieres que realice el visitante) con <code>data-cta</code>. Las transiciones vienen de <code>movimento.js</code> y se activan mediante atributos: <code>data-revela</code> hace que el bloque aparezca al entrar en pantalla, <code>data-parallax</code> hace que la imagen se mueva más lento que el desplazamiento, <code>data-intro</code> crea una apertura breve, <code>data-conta</code> cuenta un número y <code>data-contagem</code> muestra los días que faltan para una fecha. Todo se detiene cuando el sistema solicita «reducir movimiento». Copia <code>movimento.js</code> a la carpeta del sitio antes de ejecutar la prueba final:</p>
+<pre><span class="k">&lt;section data-revela="cortina"&gt;</span> <span class="c">… sobe | surge | lado | zoom | cortina</span>
+<span class="k">&lt;img data-parallax="0.12"&gt;</span>  <span class="k">&lt;b data-conta="36"&gt;</span>  <span class="k">&lt;div data-intro="900"&gt;</span>
+<span class="k">&lt;a data-cta href="#encomendar"&gt;</span>Encomendar<span class="k">&lt;/a&gt;</span>
+<span class="k">&lt;script src="movimento.js"&gt;&lt;/script&gt;</span>
+<span class="k">cp $S/runtime/movimento.js $T/</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">7</div><div>
+    <h3>Pasa la prueba final</h3>
+    <p>Abre la página en 1440×900 y 390×844, con y sin la opción «reducir movimiento». Usa <code>--tipo</code> según el BRIEF (<code>negocio</code> o <code>visual</code>). Si aparece <code>NO APROBADO</code>, la lista indica el motivo: pégala en Claude Code y pídele que lo corrija. Publica solo si aparece <code>APROBADO</code>.</p>
+<pre><span class="k">node $S/scripts/portao.js $T/index.html --tipo negocio --fotos ~/fotos-portao</span>
+<span class="c"># portão visual × conversão — meu-site (negocio)</span>
+<span class="c">#   desktop          CTA na 1ª tela: sim · CTAs: 3 · peso 0.22 MB · erros 0</span>
+<span class="c">#   celular          CTA na 1ª tela: sim · CTAs: 3 · peso 0.55 MB · erros 0</span>
+<span class="c">#   desktop+reduzir  … · celular+reduzir  …</span>
+<span class="c"># PASSA</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">8</div><div>
+    <h3>Publica</h3>
+    <p>La carpeta <code>$T</code> ya es un sitio estático completo. Súbelo a GitHub y activa GitHub Pages, el alojamiento gratuito de páginas de GitHub (o usa Vercel o el alojamiento del cliente). Cambia <code>TU_USUARIO</code> por tu usuario de GitHub. El sitio estará disponible en <code>https://TU_USUARIO.github.io/meu-site/</code> unos minutos después.</p>
+<pre><span class="c"># no publiques datos del cliente ni borradores:</span>
+<span class="k">printf</span> <span class="s">'BRIEF.md\nrefs/\nfotos/\nimg/.codex/\nimg/folha.jpg\n'</span> <span class="k">&gt; $T/.gitignore</span>
+<span class="k">git config --global user.name</span> <span class="s">"Tu Nombre"</span>; <span class="k">git config --global user.email</span> <span class="s">"tu@email.com"</span>  <span class="c"># solo la primera vez</span>
+<span class="k">cd $T && git init -b main && git add -A && git commit -m</span> <span class="s">"site"</span>
+<span class="k">gh repo create meu-site --public --source=. --push</span>
+<span class="k">gh api -X POST repos/TU_USUARIO/meu-site/pages -f "source[branch]=main" -f "source[path]=/"</span></pre>
+  </div></div>
+</div></section>
+
+<section id="exemplos"><div class="wrap">
+  <span class="chip">Ejemplos</span>
+  <h2>Dos pruebas piloto, dos estilos distintos al nuestro</h2>
+  <p class="sub">El mismo kit, con referencias diferentes. Los nombres, lugares y precios son ficticios. Haz clic para abrir.</p>
+  <div class="ex">
+    <figure><a href="../../pilotos/evento/"><img src="../assets/ex1.jpg" alt="Prueba piloto de evento: invitación de boda en acuarela con viñedo, capilla y lapacho rosado" loading="lazy"></a><figcaption><b>Evento</b> (visual): acuarela en tonos vino y salvia, apertura tipo velo, cuenta regresiva, historia en cortina y confirmación por WhatsApp.</figcaption></figure>
+    <figure><a href="../../pilotos/padaria/"><img src="../assets/ex2.jpg" alt="Prueba piloto de panadería: panes sobre una mesa oscura y botón para hacer un pedido en la primera pantalla" loading="lazy"></a><figcaption><b>Panadería</b> (negocio): fotografía cálida de horno de leña, botón para hacer un pedido en la primera pantalla y barra fija en el celular.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="medida"><div class="wrap">
+  <span class="chip">Visual × conversión</span>
+  <h2>Demasiada belleza también puede estorbar</h2>
+  <p class="sub">Un sitio existe para que alguien haga algo. El tipo indicado en BRIEF define cuánto movimiento cabe. La prueba final mide el botón (en la primera pantalla y en 1,5 s para el tipo negocio), el peso, la vista en celular y la opción «reducir movimiento»; el resto de la dosis (apertura breve, barra fija) sigue las reglas de la skill y puedes revisarlo en las capturas de la prueba.</p>
+  <div class="grid g3">
+    <div class="card"><h3>🧁 Negocio</h3><p>Botón en la primera pantalla en hasta 1,5 s, sin apertura, barra fija en el celular y hasta 3 MB.</p><pre><span class="c"># panadería</span>
+<span class="k">APROBADO</span></pre></div>
+    <div class="card"><h3>💐 Visual</h3><p>Apertura de hasta 1,2 s, cortina, parallax y cuenta regresiva; el botón puede aparecer más abajo, pero debe verse. Hasta 8 MB.</p><pre><span class="c"># evento</span>
+<span class="k">APROBADO</span></pre></div>
+    <div class="card"><h3>🚫 Página «inmersiva»</h3><p>Apertura que ocupa una pantalla y media, botón hasta abajo y animación infinita. Corresponde a la prueba <code>tests/ruim.html</code>.</p><pre><span class="c"># ruim.html</span>
+<span class="s">NÃO PASSA: CTA fora da primeira tela</span>
+<span class="s">animação rodando com "reduzir movimento"</span></pre></div>
+  </div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+  <span class="chip">Hoja de ruta</span>
+  <h2>Lo que ya existe y lo que viene</h2>
+  <p class="sub">Lo que aparece como terminado está en el repositorio y se probó.</p>
+  <div class="phase"><div class="tag">v1 · listo</div><div class="d"><strong>Kit + skill + 2 pruebas piloto</strong><span>Preguntas, estilo definido, imágenes con Codex, movimento.js, prueba final y pruebas (<code>bash tests/rodar.sh</code>).</span></div></div>
+  <div class="phase"><div class="tag">siguiente</div><div class="d"><strong>Video corto a partir de las imágenes</strong><span>Clip animado como fondo (Kling y similares), opcional y solo con autorización para el servicio; por ahora, todo el movimiento se crea con código.</span></div></div>
+  <div class="phase"><div class="tag">siguiente</div><div class="d"><strong>Más tipos en el guion de preguntas</strong><span>Clínica, curso, inmobiliaria: cada uno con sus preguntas y la dosis adecuada de movimiento.</span></div></div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">Claude Code</div><div class="pill">Codex image_gen</div><div class="pill">Playwright</div>
+    <p style="margin-top:18px">site-inspirado · MIT ·
+      <a href="https://github.com/inematds/site-inspirado">inematds/site-inspirado</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='site-inspirado-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; }
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      localStorage.setItem(KEY, light?'light':'dark');
+    });
+  })();
+</script>
+</body>
+</html>
