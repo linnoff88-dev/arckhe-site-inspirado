@@ -7,7 +7,7 @@
  *   data-conta="2027"                             número que conta até o valor quando aparece
  *   data-contagem="2027-07-17T16:00:00"           dias/horas até a data
  * Com "reduzir movimento" ligado no sistema, tudo aparece pronto e nada anda.
- * O CSS mínimo vem junto (injetado) para a página não precisar lembrar de nada.
+ * O CSS mínimo vem junto (injetado) para a página nêo precisar lembrar de nada.
  */
 (function () {
   var reduzir = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;

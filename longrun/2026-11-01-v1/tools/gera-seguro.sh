@@ -2,12 +2,12 @@
 # Gera as imagens de um piloto UMA POR VEZ, cada uma dentro do pesado.sh, com vigia de memória.
 # uso: gera-seguro.sh <piloto>   (evento | padaria)
 # Regras da retomada 2 (04/11/2026): antes de cada imagem, available >= 30 GB e nenhum render rodando;
-# durante, se available < 20 GB, mata e para. Imagem de 0 bytes ou que não abre é refeita.
+# durante, se available < 20 GB, mata e para. Imagem de 0 bytes ou que nêo abre é refeita.
 set -uo pipefail
 R=~/projetos/site-inspirado; P=$R/pilotos/$1
 PESADO=~/projetos/wifi/retomada-2026-11-04/pesado.sh
 livre() { free -g | awk '/Mem:/{print $7}'; }
-# render de verdade = o PROGRAMA (ffmpeg, ou node/python/bash rodando um motor de vídeo); não o texto de um prompt
+# render de verdade = o PROGRAMA (ffmpeg, ou node/python/bash rodando um motor de vídeo); nêo o texto de um prompt
 renders() { ps -eo pid=,args= | grep -E '^ *[0-9]+ (\S*/)?(ffmpeg [-]|(node|python3?|bash) \S*(hyperframes|run_lane|build_block|rtex\.py)|npx hyperframes)' | grep -v -e shell-snapshots -e gera-seguro; }
 ok_img() { [ -s "$1" ] && python3 -c "from PIL import Image;i=Image.open('$1');i.load()" 2>/dev/null; }
 

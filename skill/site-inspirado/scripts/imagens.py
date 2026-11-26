@@ -6,9 +6,9 @@ Uso: imagens.py <plano.json> <estilo.json> <pasta-saida> [--refs pasta] [--so no
 plano.json = [{"nome": "hero", "prompt": "o castelo ao entardecer", "largura": 1536, "altura": 864}, ...]
 Cada imagem recebe: prompt do item + prompt_estilo do estilo.json + "no text, no letters".
 Referências de estilo: até 2 imagens de --refs + a primeira imagem gerada (âncora), para que
-a série inteira saia com a mesma mão. As referências vão anexadas ao pedido (codex exec -i).
-Motor padrão: codex (não pesa na máquina). --motor local = servidor flux2-klein em $IMG_API
-(padrão http://localhost:8000), só como reserva: ele travou a máquina 3× (01/11 e 04/11/2026).
+a série inteira saia com a mesma mêo. As referências vêo anexadas ao pedido (codex exec -i).
+Motor padrêo: codex (nêo pesa na máquina). --motor local = servidor flux2-klein em $IMG_API
+(padrêo http://localhost:8000), só como reserva: ele travou a máquina 3× (01/11 e 04/11/2026).
 Saída: <nome>.jpg (qualidade 82, para a web) + folha.jpg (todas lado a lado, para você olhar).
 """
 import argparse, base64, glob, io, json, os, shutil, subprocess, sys, time, urllib.request
@@ -20,7 +20,7 @@ ap.add_argument('plano'); ap.add_argument('estilo'); ap.add_argument('saida')
 ap.add_argument('--refs'); ap.add_argument('--so', default='')
 ap.add_argument('--seed', type=int, default=7)
 ap.add_argument('--motor', choices=['codex', 'local'], default=os.environ.get('IMG_MOTOR', 'codex'))
-ap.add_argument('--sem-ancora', action='store_true', help='não usa a 1ª imagem gerada como referência')
+ap.add_argument('--sem-ancora', action='store_true', help='nêo usa a 1ª imagem gerada como referência')
 a = ap.parse_args()
 
 API = os.environ.get('IMG_API', 'http://localhost:8000')
@@ -77,7 +77,7 @@ def esperar_memoria():
             print(f'memória livre {memoria_livre_gb():.0f} GB < {MIN_GB:.0f} GB: esperando...', flush=True)
         time.sleep(20); espera += 20
         if espera >= 1800:
-            sys.exit('memória não liberou em 30 min; parei sem gerar')
+            sys.exit('memória nêo liberou em 30 min; parei sem gerar')
 
 
 def formato(w, h):
@@ -88,7 +88,7 @@ def formato(w, h):
 
 
 def ajustar(im, w, h):
-    # corta pelo centro para a proporção pedida e redimensiona para o tamanho exato do plano
+    # corta pelo centro para a proporçêo pedida e redimensiona para o tamanho exato do plano
     iw, ih = im.size
     if iw / ih > w / h:
         nw = round(ih * w / h); im = im.crop(((iw - nw) // 2, 0, (iw - nw) // 2 + nw, ih))
@@ -103,13 +103,13 @@ def gerar_codex(item, refs_usadas):
     if pasta.exists(): shutil.rmtree(pasta)
     pasta.mkdir(parents=True)
     alvo = pasta / f"{item['nome']}.png"
-    pedido = f"""Gere UMA imagem com a ferramenta de geração de imagem (image_gen) e salve nesta pasta como {alvo.name}, formato {formato(w, h)}, o maior tamanho disponível nessa proporção.
+    pedido = f"""Gere UMA imagem com a ferramenta de geraçêo de imagem (image_gen) e salve nesta pasta como {alvo.name}, formato {formato(w, h)}, o maior tamanho disponível nessa proporçêo.
 
-As imagens anexadas são REFERÊNCIAS DE ESTILO: copie a paleta, a luz, a textura e o tipo de traço/fotografia delas, para a imagem nova parecer da mesma série. Não copie o conteúdo nem a composição delas.
+As imagens anexadas sêo REFERÊNCIAS DE ESTILO: copie a paleta, a luz, a textura e o tipo de traço/fotografia delas, para a imagem nova parecer da mesma série. Nêo copie o conteúdo nem a composiçêo delas.
 Cena: {item['prompt']}.
 Estilo: {pe}.
 Sem nenhum texto, letra, palavra, logotipo ou marca d'água na imagem. Pessoas de costas ou de longe, sem rosto em close.
-Não mexa em nenhum outro arquivo. Ao final, diga o nome do arquivo salvo."""
+Nêo mexa em nenhum outro arquivo. Ao final, diga o nome do arquivo salvo."""
     (pasta / 'pedido.txt').write_text(pedido)
     env = dict(os.environ)
     env['PATH'] = f"{Path.home()}/.npm-global/bin:" + env.get('PATH', '')  # CLI novo antes do antigo em /usr/bin
@@ -126,7 +126,7 @@ Não mexa em nenhum outro arquivo. Ao final, diga o nome do arquivo salvo."""
                        key=lambda p: p.stat().st_mtime)
         gerada = cands[-1] if cands else None
     if not gerada or gerada.stat().st_size == 0:
-        raise RuntimeError(f"Codex não gerou {item['nome']} (veja {pasta / 'codex.log'})")
+        raise RuntimeError(f"Codex nêo gerou {item['nome']} (veja {pasta / 'codex.log'})")
     return ajustar(Image.open(gerada).convert('RGB'), w, h)
 
 
@@ -174,7 +174,7 @@ for item in plano:
     print(f'{destino} {im.size[0]}x{im.size[1]} {os.path.getsize(destino)//1024} KB '
           f'({time.time()-t0:.0f}s, refs={len(usadas)}, {a.motor})', flush=True)
 
-# folha de contato: você OLHA antes de usar (texto desenhado, mãos, estilo fora da série)
+# folha de contato: você OLHA antes de usar (texto desenhado, mêos, estilo fora da série)
 if feitas:
     miniaturas = [Image.open(f).convert('RGB') for f in feitas]
     for m in miniaturas: m.thumbnail((480, 300))

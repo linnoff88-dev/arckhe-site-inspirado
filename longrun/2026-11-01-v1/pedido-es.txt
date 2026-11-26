@@ -8,7 +8,7 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>site-inspirado — sua referência vira o estilo do site</title>
-<meta name="description" content="Kit e skill para criar sites com cara própria: referências viram estilo medido, a IA pergunta antes de gerar, imagens no mesmo estilo pelo Codex e um portão que confere o botão antes de publicar.">
+<meta name="description" content="Kit e skill para criar sites com cara própria: referências viram estilo medido, a IA pergunta antes de gerar, imagens no mesmo estilo pelo Codex e um portêo que confere o botêo antes de publicar.">
 <link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/site-inspirado/guia/">
 <link rel="alternate" hreflang="en" href="https://inematds.github.io/site-inspirado/guia/en/">
 <link rel="alternate" hreflang="es" href="https://inematds.github.io/site-inspirado/guia/es/">
@@ -120,7 +120,7 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
     <a class="sec" href="#oque">O que é</a>
     <a class="sec" href="#guia">Guia de uso</a>
     <a class="sec" href="#exemplos">Exemplos</a>
-    <a class="sec" href="#medida">Visual × conversão</a>
+    <a class="sec" href="#medida">Visual × conversêo</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
     <a class="btn" href="https://github.com/inematds/site-inspirado" target="_blank" rel="noopener">GitHub</a>
@@ -133,7 +133,7 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
     <div>
       <span class="chip">Kit + skill · sites com IA</span>
       <h1>Sua referência vira o <span class="amb">estilo</span> do site</h1>
-      <p class="lead">Junte 2 a 5 imagens de que você gosta. A IA pergunta antes de gerar, cria todas as imagens no mesmo estilo, monta a página com movimento e confere se o visitante ainda acha o botão.</p>
+      <p class="lead">Junte 2 a 5 imagens de que você gosta. A IA pergunta antes de gerar, cria todas as imagens no mesmo estilo, monta a página com movimento e confere se o visitante ainda acha o botêo.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
         <a class="btn ghost" href="https://github.com/inematds/site-inspirado" target="_blank" rel="noopener">Ver no GitHub</a>
@@ -145,32 +145,32 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em resumo</span>
-  <p>O site-inspirado é um kit com uma skill para o Claude Code que cria sites que não têm cara de "feitos por IA". Você entrega imagens de referência (do Pinterest, do convite já impresso, da foto da loja) e a IA faz perguntas e pesquisa antes de gerar qualquer coisa. Depois ela mede o estilo dessas imagens, gera as imagens do site no mesmo estilo pelo Codex e monta a página com transições. No fim, um teste automático confere se o botão principal aparece e se a página funciona no celular. Para usar, você precisa do Claude Code, do Codex logado na sua assinatura, de Python e de Node.</p>
+  <p>O site-inspirado é um kit com uma skill para o Claude Code que cria sites que nêo têm cara de "feitos por IA". Você entrega imagens de referência (do Pinterest, do convite já impresso, da foto da loja) e a IA faz perguntas e pesquisa antes de gerar qualquer coisa. Depois ela mede o estilo dessas imagens, gera as imagens do site no mesmo estilo pelo Codex e monta a página com transições. No fim, um teste automático confere se o botêo principal aparece e se a página funciona no celular. Para usar, você precisa do Claude Code, do Codex logado na sua assinatura, de Python e de Node.</p>
 </div></section>
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>O processo é o diferencial, não o código</h2>
+  <h2>O processo é o diferencial, nêo o código</h2>
   <p class="sub">Pedir "faz um site bonito" dá o mesmo site de sempre. Dar referência, responder perguntas e conferir o resultado dá um site com cara própria.</p>
-  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="As seis etapas do site-inspirado: referências, perguntas, estilo medido, imagens no estilo, movimento e portão" loading="lazy" style="width:100%;display:block"></figure>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="As seis etapas do site-inspirado: referências, perguntas, estilo medido, imagens no estilo, movimento e portêo" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
-    <div class="card"><h3>🎯 Pergunta antes de gerar</h3><p>Um roteiro de perguntas por tipo de site (evento, negócio, serviço, portfólio). O que a pessoa não respondeu é pesquisado ou fica de fora.</p></div>
+    <div class="card"><h3>🎯 Pergunta antes de gerar</h3><p>Um roteiro de perguntas por tipo de site (evento, negócio, serviço, portfólio). O que a pessoa nêo respondeu é pesquisado ou fica de fora.</p></div>
     <div class="card"><h3>🖌️ Estilo medido</h3><p>O <code>estilo.py</code> tira a paleta das referências e calcula o contraste. Todas as imagens recebem o mesmo prompt de estilo e as mesmas referências.</p></div>
-    <div class="card"><h3>✅ Portão antes de publicar</h3><p>O <code>portao.js</code> abre a página no computador e no celular e barra o site que esconde o botão, quebra ou ignora "reduzir movimento".</p></div>
+    <div class="card"><h3>✅ Portêo antes de publicar</h3><p>O <code>portao.js</code> abre a página no computador e no celular e barra o site que esconde o botêo, quebra ou ignora "reduzir movimento".</p></div>
   </div>
 </div></section>
 
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>Seis etapas, uma conferência em cada</h2>
-  <p class="sub">Nenhuma etapa começa sem a anterior aprovada. O guia abaixo tem 8 passos: instalar, estas 6 etapas (passos 2 a 7) e publicar. O "portão" é o teste automático do fim.</p>
+  <p class="sub">Nenhuma etapa começa sem a anterior aprovada. O guia abaixo tem 8 passos: instalar, estas 6 etapas (passos 2 a 7) e publicar. O "portêo" é o teste automático do fim.</p>
   <div class="flow">
     <span>refs/</span><span class="arr">→</span>
     <span>BRIEF.md</span><span class="arr">→</span>
     <span>estilo.json</span><span class="arr">→</span>
     <span>img/ + folha.jpg</span><span class="arr">→</span>
     <span>index.html</span><span class="arr">→</span>
-    <span>portão: PASSA</span>
+    <span>portêo: PASSA</span>
   </div>
 </div></section>
 
@@ -179,7 +179,7 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
   <h2>O que precisa estar instalado</h2>
   <p class="sub">Funciona no Linux e no Mac (no Windows, use o WSL, o Linux dentro do Windows). Tudo roda na sua máquina. As imagens saem pelo Codex na sua assinatura, sem chave de API.</p>
   <div class="grid g3">
-    <div class="card"><h3>Codex CLI logado</h3><p>Gera as imagens com o <code>image_gen</code> (o gerador de imagem do Codex), anexando as referências. O script roda o Codex sem pedir confirmação a cada imagem (<code>--dangerously-bypass-approvals-and-sandbox</code>): use numa pasta só do site.</p><pre><span class="k">npm i -g @openai/codex</span>   <span class="c"># instala (erro EACCES: rode com sudo na frente)</span>
+    <div class="card"><h3>Codex CLI logado</h3><p>Gera as imagens com o <code>image_gen</code> (o gerador de imagem do Codex), anexando as referências. O script roda o Codex sem pedir confirmaçêo a cada imagem (<code>--dangerously-bypass-approvals-and-sandbox</code>): use numa pasta só do site.</p><pre><span class="k">npm i -g @openai/codex</span>   <span class="c"># instala (erro EACCES: rode com sudo na frente)</span>
 <span class="k">codex login</span>              <span class="c"># entra com a conta do ChatGPT</span>
 <span class="k">codex login status</span>       <span class="c"># confere</span></pre></div>
     <div class="card"><h3>Python 3 + Pillow</h3><p>Mede a paleta e monta a folha de contato.</p><pre><span class="k">python3 -m pip install --user pillow</span>
@@ -187,7 +187,7 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
 <span class="k">sudo apt install python3-pil</span>   <span class="c"># Ubuntu/Debian</span>
 <span class="k">brew install pillow</span>            <span class="c"># Mac</span>
 <span class="k">python3 -c</span> <span class="s">"import PIL"</span>  <span class="c"># confere</span></pre></div>
-    <div class="card"><h3>Node 18+ e GitHub CLI</h3><p>Instale o Node primeiro (o <code>npm</code> do Codex vem com ele) e o git. O Node roda o portão (que abre a página num navegador sem janela, instalado no passo 1). O <code>gh</code> publica no passo 8.</p><pre><span class="k">brew install node git gh</span>   <span class="c"># Mac (ou nodejs.org)</span>
+    <div class="card"><h3>Node 18+ e GitHub CLI</h3><p>Instale o Node primeiro (o <code>npm</code> do Codex vem com ele) e o git. O Node roda o portêo (que abre a página num navegador sem janela, instalado no passo 1). O <code>gh</code> publica no passo 8.</p><pre><span class="k">brew install node git gh</span>   <span class="c"># Mac (ou nodejs.org)</span>
 <span class="k">sudo apt install nodejs npm git gh</span>   <span class="c"># Ubuntu/Debian</span>
 <span class="k">node -v</span>             <span class="c"># 18 ou mais</span>
 <span class="k">gh auth login</span>      <span class="c"># gh: cli.github.com</span></pre></div>
@@ -197,29 +197,29 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
   <h2>Do zero ao site no ar</h2>
-  <p class="sub"><code>T</code> é a pasta do seu site (uma por site). <code>S</code> é a pasta da skill. Os passos 3 e 6 você faz conversando com o Claude Code; os outros são comandos no terminal.</p>
+  <p class="sub"><code>T</code> é a pasta do seu site (uma por site). <code>S</code> é a pasta da skill. Os passos 3 e 6 você faz conversando com o Claude Code; os outros sêo comandos no terminal.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Instale a skill</h3>
-    <p>Clone o repositório e ligue a skill ao Claude Code. <code>$T</code> é a pasta <code>meu-site</code> dentro da sua pasta pessoal: as referências vão em <code>meu-site/refs</code>. <code>S</code> e <code>T</code> só valem no terminal em que você as criou: num terminal novo, rode a terceira linha de novo. Rode as linhas na pasta onde quer guardar o kit (o <code>ln -s</code> usa a pasta atual).</p>
+    <p>Clone o repositório e ligue a skill ao Claude Code. <code>$T</code> é a pasta <code>meu-site</code> dentro da sua pasta pessoal: as referências vêo em <code>meu-site/refs</code>. <code>S</code> e <code>T</code> só valem no terminal em que você as criou: num terminal novo, rode a terceira linha de novo. Rode as linhas na pasta onde quer guardar o kit (o <code>ln -s</code> usa a pasta atual).</p>
 <pre><span class="k">git clone https://github.com/inematds/site-inspirado</span>
 <span class="k">mkdir -p ~/.claude/skills && ln -sfn "$PWD/site-inspirado/skill/site-inspirado" ~/.claude/skills/site-inspirado</span>
 <span class="k">S=~/.claude/skills/site-inspirado; T=~/meu-site; mkdir -p $T/refs</span>
-<span class="k">cd $S/scripts && npm install && npx playwright install --with-deps chromium && cd -</span>  <span class="c"># navegador do portão</span></pre>
+<span class="k">cd $S/scripts && npm install && npx playwright install --with-deps chromium && cd -</span>  <span class="c"># navegador do portêo</span></pre>
   </div></div>
 
   <div class="step"><div class="b">2</div><div>
     <h3>Junte as referências</h3>
-    <p>De 2 a 5 imagens em <code>$T/refs/</code>: o que você já tem (convite, logo, foto da loja) e inspiração (no Pinterest, busque "site padaria" ou "wedding website watercolor"). Uma imagem do que você NÃO quer também ajuda.</p>
+    <p>De 2 a 5 imagens em <code>$T/refs/</code>: o que você já tem (convite, logo, foto da loja) e inspiraçêo (no Pinterest, busque "site padaria" ou "wedding website watercolor"). Uma imagem do que você NêO quer também ajuda.</p>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
     <h3>Deixe a IA perguntar primeiro</h3>
-    <p>Abra o Claude Code dentro da pasta do site (assim o BRIEF, o estilo e a página ficam todos em <code>$T</code>) e diga a frase que muda o resultado. As perguntas por tipo de site estão em <code>referencias/perguntas.md</code>; as respostas vão para <code>$T/BRIEF.md</code>, junto com o tipo: <code>negocio</code> (o site existe para uma ação: encomendar, agendar) ou <code>visual</code> (evento, portfólio: pode ter mais movimento).</p>
-    <p>Os passos 4, 5 e 7, o <code>cp</code> do passo 6 e o passo 8 são comandos de terminal: abra um segundo terminal (o primeiro fica com o Claude Code) e rode nele a linha <code>S=…; T=…</code> do passo 1 antes.</p>
+    <p>Abra o Claude Code dentro da pasta do site (assim o BRIEF, o estilo e a página ficam todos em <code>$T</code>) e diga a frase que muda o resultado. As perguntas por tipo de site estêo em <code>referencias/perguntas.md</code>; as respostas vêo para <code>$T/BRIEF.md</code>, junto com o tipo: <code>negocio</code> (o site existe para uma açêo: encomendar, agendar) ou <code>visual</code> (evento, portfólio: pode ter mais movimento).</p>
+    <p>Os passos 4, 5 e 7, o <code>cp</code> do passo 6 e o passo 8 sêo comandos de terminal: abra um segundo terminal (o primeiro fica com o Claude Code) e rode nele a linha <code>S=…; T=…</code> do passo 1 antes.</p>
 <pre><span class="c"># no terminal</span>
 <span class="k">cd $T && claude</span></pre>
-<pre><span class="c"># dentro do Claude Code (digite, não é comando de terminal)</span>
+<pre><span class="c"># dentro do Claude Code (digite, nêo é comando de terminal)</span>
 <span class="k">/site-inspirado</span> <span class="s">"Quero o site da minha padaria. Antes de gerar nada, me pergunte tudo o que precisa e pesquise o que um site deste tipo costuma ter."</span></pre>
   </div></div>
 
@@ -232,15 +232,15 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
 
   <div class="step"><div class="b">5</div><div>
     <h3>Gere as imagens no mesmo estilo</h3>
-    <p>Escreva <code>$T/plano.json</code> (uma linha por imagem: <code>nome</code>, <code>prompt</code> do assunto, <code>largura</code>, <code>altura</code>). Cada imagem leva as 2 primeiras referências (em ordem alfabética: dê nomes como <code>1-convite.jpg</code> às que mais importam) e a primeira imagem gerada como modelo (a "âncora"), para a série sair com a mesma mão. No fim sai a <code>folha.jpg</code>, uma folha com todas as imagens lado a lado: olhe e refaça o que destoar. Não precisa escrever o JSON à mão: peça ao Claude Code "escreva o plano.json a partir do BRIEF" ou copie <code>pilotos/padaria/plano.json</code> e troque os textos. Cada imagem leva cerca de 1 minuto e usa a cota da sua assinatura do Codex.</p>
-<pre><span class="c"># plano.json: [{"nome": "hero", "prompt": "pães esfriando na mesa", "largura": 1536, "altura": 1024}, ...]</span>
+    <p>Escreva <code>$T/plano.json</code> (uma linha por imagem: <code>nome</code>, <code>prompt</code> do assunto, <code>largura</code>, <code>altura</code>). Cada imagem leva as 2 primeiras referências (em ordem alfabética: dê nomes como <code>1-convite.jpg</code> às que mais importam) e a primeira imagem gerada como modelo (a "âncora"), para a série sair com a mesma mêo. No fim sai a <code>folha.jpg</code>, uma folha com todas as imagens lado a lado: olhe e refaça o que destoar. Nêo precisa escrever o JSON à mêo: peça ao Claude Code "escreva o plano.json a partir do BRIEF" ou copie <code>pilotos/padaria/plano.json</code> e troque os textos. Cada imagem leva cerca de 1 minuto e usa a cota da sua assinatura do Codex.</p>
+<pre><span class="c"># plano.json: [{"nome": "hero", "prompt": "pêes esfriando na mesa", "largura": 1536, "altura": 1024}, ...]</span>
 <span class="k">python3 $S/scripts/imagens.py $T/plano.json $T/estilo.json $T/img --refs $T/refs</span>
 <span class="k">python3 $S/scripts/imagens.py $T/plano.json $T/estilo.json $T/img --refs $T/refs --so croissant</span>  <span class="c"># refaz uma</span></pre>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
     <h3>Monte a página com movimento</h3>
-    <p>Peça ao Claude Code: "monte a página com o BRIEF, o estilo e as imagens". Ele desenha uma página para o assunto e marca o botão principal (o CTA, a ação que você quer que o visitante faça) com <code>data-cta</code>. As transições vêm do <code>movimento.js</code>, por atributo: <code>data-revela</code> faz o bloco entrar ao aparecer na tela, <code>data-parallax</code> faz a imagem andar mais devagar que a rolagem, <code>data-intro</code> é uma abertura curta, <code>data-conta</code> conta um número e <code>data-contagem</code> mostra os dias até uma data. Tudo para quando o sistema pede "reduzir movimento". Copie o <code>movimento.js</code> para a pasta do site antes do portão:</p>
+    <p>Peça ao Claude Code: "monte a página com o BRIEF, o estilo e as imagens". Ele desenha uma página para o assunto e marca o botêo principal (o CTA, a açêo que você quer que o visitante faça) com <code>data-cta</code>. As transições vêm do <code>movimento.js</code>, por atributo: <code>data-revela</code> faz o bloco entrar ao aparecer na tela, <code>data-parallax</code> faz a imagem andar mais devagar que a rolagem, <code>data-intro</code> é uma abertura curta, <code>data-conta</code> conta um número e <code>data-contagem</code> mostra os dias até uma data. Tudo para quando o sistema pede "reduzir movimento". Copie o <code>movimento.js</code> para a pasta do site antes do portêo:</p>
 <pre><span class="k">&lt;section data-revela="cortina"&gt;</span> <span class="c">… sobe | surge | lado | zoom | cortina</span>
 <span class="k">&lt;img data-parallax="0.12"&gt;</span>  <span class="k">&lt;b data-conta="36"&gt;</span>  <span class="k">&lt;div data-intro="900"&gt;</span>
 <span class="k">&lt;a data-cta href="#encomendar"&gt;</span>Encomendar<span class="k">&lt;/a&gt;</span>
@@ -249,10 +249,10 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
   </div></div>
 
   <div class="step"><div class="b">7</div><div>
-    <h3>Passe no portão</h3>
-    <p>Abre a página em 1440×900 e 390×844, com e sem "reduzir movimento". Use o <code>--tipo</code> que está no BRIEF (<code>negocio</code> ou <code>visual</code>). Se sair <code>NÃO PASSA</code>, a lista diz o motivo: cole no Claude Code e peça a correção. Só publique com <code>PASSA</code>.</p>
+    <h3>Passe no portêo</h3>
+    <p>Abre a página em 1440×900 e 390×844, com e sem "reduzir movimento". Use o <code>--tipo</code> que está no BRIEF (<code>negocio</code> ou <code>visual</code>). Se sair <code>NêO PASSA</code>, a lista diz o motivo: cole no Claude Code e peça a correçêo. Só publique com <code>PASSA</code>.</p>
 <pre><span class="k">node $S/scripts/portao.js $T/index.html --tipo negocio --fotos ~/fotos-portao</span>
-<span class="c"># portão visual × conversão — meu-site (negocio)</span>
+<span class="c"># portêo visual × conversêo — meu-site (negocio)</span>
 <span class="c">#   desktop          CTA na 1ª tela: sim · CTAs: 3 · peso 0.22 MB · erros 0</span>
 <span class="c">#   celular          CTA na 1ª tela: sim · CTAs: 3 · peso 0.55 MB · erros 0</span>
 <span class="c">#   desktop+reduzir  … · celular+reduzir  …</span>
@@ -262,7 +262,7 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
   <div class="step"><div class="b">8</div><div>
     <h3>Publique</h3>
     <p>A pasta <code>$T</code> já é um site estático completo. Suba para o GitHub e ligue o GitHub Pages, a hospedagem grátis de páginas do GitHub (ou use a Vercel ou a hospedagem do cliente). Troque <code>SEU_USUARIO</code> pelo seu usuário do GitHub. O site abre em <code>https://SEU_USUARIO.github.io/meu-site/</code> alguns minutos depois.</p>
-<pre><span class="c"># não publique os dados do cliente nem os rascunhos:</span>
+<pre><span class="c"># nêo publique os dados do cliente nem os rascunhos:</span>
 <span class="k">printf</span> <span class="s">'BRIEF.md\nrefs/\nfotos/\nimg/.codex/\nimg/folha.jpg\n'</span> <span class="k">&gt; $T/.gitignore</span>
 <span class="k">git config --global user.name</span> <span class="s">"Seu Nome"</span>; <span class="k">git config --global user.email</span> <span class="s">"voce@email.com"</span>  <span class="c"># só na 1ª vez</span>
 <span class="k">cd $T && git init -b main && git add -A && git commit -m</span> <span class="s">"site"</span>
@@ -273,26 +273,26 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
 
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
-  <h2>Dois pilotos, dois estilos que não são o nosso</h2>
-  <p class="sub">Mesmo kit, referências diferentes. Nomes, lugares e preços são fictícios. Clique para abrir.</p>
+  <h2>Dois pilotos, dois estilos que nêo sêo o nosso</h2>
+  <p class="sub">Mesmo kit, referências diferentes. Nomes, lugares e preços sêo fictícios. Clique para abrir.</p>
   <div class="ex">
-    <figure><a href="../pilotos/evento/"><img src="assets/ex1.jpg" alt="Piloto evento: convite de casamento em aquarela com vinhedo, capela e ipê-rosa" loading="lazy"></a><figcaption><b>Evento</b> (visual): aquarela vinho e sálvia, véu de abertura, contagem regressiva, história em cortina, confirmação pelo WhatsApp.</figcaption></figure>
-    <figure><a href="../pilotos/padaria/"><img src="assets/ex2.jpg" alt="Piloto padaria: pães sobre mesa escura e botão de encomendar na primeira tela" loading="lazy"></a><figcaption><b>Padaria</b> (negócio): foto quente de forno a lenha, botão de encomenda na 1ª tela e barra fixa no celular.</figcaption></figure>
+    <figure><a href="../pilotos/evento/"><img src="assets/ex1.jpg" alt="Piloto evento: convite de casamento em aquarela com vinhedo, capela e ipê-rosa" loading="lazy"></a><figcaption><b>Evento</b> (visual): aquarela vinho e sálvia, véu de abertura, contagem regressiva, história em cortina, confirmaçêo pelo WhatsApp.</figcaption></figure>
+    <figure><a href="../pilotos/padaria/"><img src="assets/ex2.jpg" alt="Piloto padaria: pêes sobre mesa escura e botêo de encomendar na primeira tela" loading="lazy"></a><figcaption><b>Padaria</b> (negócio): foto quente de forno a lenha, botêo de encomenda na 1ª tela e barra fixa no celular.</figcaption></figure>
   </div>
 </div></section>
 
 <section id="medida"><div class="wrap">
-  <span class="chip">Visual × conversão</span>
+  <span class="chip">Visual × conversêo</span>
   <h2>Bonito demais também atrapalha</h2>
-  <p class="sub">Um site existe para alguém fazer alguma coisa. O tipo no BRIEF decide quanto movimento cabe. O portão mede o botão (na 1ª tela em 1,5 s no tipo negócio), o peso, o celular e o "reduzir movimento"; o resto da dose (abertura curta, barra fixa) é regra da skill, e você confere nas fotos do portão.</p>
+  <p class="sub">Um site existe para alguém fazer alguma coisa. O tipo no BRIEF decide quanto movimento cabe. O portêo mede o botêo (na 1ª tela em 1,5 s no tipo negócio), o peso, o celular e o "reduzir movimento"; o resto da dose (abertura curta, barra fixa) é regra da skill, e você confere nas fotos do portêo.</p>
   <div class="grid g3">
-    <div class="card"><h3>🧁 Negócio</h3><p>Botão na 1ª tela em até 1,5 s, sem abertura, barra fixa no celular, até 3 MB.</p><pre><span class="c"># padaria</span>
+    <div class="card"><h3>🧁 Negócio</h3><p>Botêo na 1ª tela em até 1,5 s, sem abertura, barra fixa no celular, até 3 MB.</p><pre><span class="c"># padaria</span>
 <span class="k">PASSA</span></pre></div>
-    <div class="card"><h3>💐 Visual</h3><p>Abertura de até 1,2 s, cortina, parallax e contagem; o botão pode vir depois, mas tem de aparecer. Até 8 MB.</p><pre><span class="c"># evento</span>
+    <div class="card"><h3>💐 Visual</h3><p>Abertura de até 1,2 s, cortina, parallax e contagem; o botêo pode vir depois, mas tem de aparecer. Até 8 MB.</p><pre><span class="c"># evento</span>
 <span class="k">PASSA</span></pre></div>
-    <div class="card"><h3>🚫 Página "imersiva"</h3><p>Abertura que ocupa uma tela e meia, botão lá embaixo e animação infinita. É o teste <code>tests/ruim.html</code>.</p><pre><span class="c"># ruim.html</span>
-<span class="s">NÃO PASSA: CTA fora da primeira tela</span>
-<span class="s">animação rodando com "reduzir movimento"</span></pre></div>
+    <div class="card"><h3>🚫 Página "imersiva"</h3><p>Abertura que ocupa uma tela e meia, botêo lá embaixo e animaçêo infinita. É o teste <code>tests/ruim.html</code>.</p><pre><span class="c"># ruim.html</span>
+<span class="s">NêO PASSA: CTA fora da primeira tela</span>
+<span class="s">animaçêo rodando com "reduzir movimento"</span></pre></div>
   </div>
 </div></section>
 
@@ -300,8 +300,8 @@ Translate this HTML page from Brazilian Portuguese to Latin American Spanish. Ou
   <span class="chip">Roadmap</span>
   <h2>O que existe e o que vem</h2>
   <p class="sub">O que está marcado como feito está no repositório e foi testado.</p>
-  <div class="phase"><div class="tag">v1 · feito</div><div class="d"><strong>Kit + skill + 2 pilotos</strong><span>Perguntas, estilo medido, imagens pelo Codex, movimento.js, portão e testes (<code>bash tests/rodar.sh</code>).</span></div></div>
-  <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Vídeo curto a partir das imagens</strong><span>Clipe animado como fundo (Kling e similares), opcional e só com autorização para o serviço; hoje todo o movimento é código.</span></div></div>
+  <div class="phase"><div class="tag">v1 · feito</div><div class="d"><strong>Kit + skill + 2 pilotos</strong><span>Perguntas, estilo medido, imagens pelo Codex, movimento.js, portêo e testes (<code>bash tests/rodar.sh</code>).</span></div></div>
+  <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Vídeo curto a partir das imagens</strong><span>Clipe animado como fundo (Kling e similares), opcional e só com autorizaçêo para o serviço; hoje todo o movimento é código.</span></div></div>
   <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Mais tipos no roteiro de perguntas</strong><span>Clínica, curso, imobiliária: cada um com suas perguntas e a dose certa de movimento.</span></div></div>
 </div></section>
 

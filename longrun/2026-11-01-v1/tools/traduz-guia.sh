@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Traduz guia/index.html para en|es pelo tradutor central e corrige os caminhos que a tradução costuma errar.
+# Traduz guia/index.html para en|es pelo tradutor central e corrige os caminhos que a traduçêo costuma errar.
 # uso: traduz-guia.sh en|es
 set -uo pipefail
 l=$1; R=~/projetos/site-inspirado; L=$R/longrun/2026-11-01-v1; cd "$R"
@@ -16,15 +16,15 @@ python3 - "$f" "$l" <<'PY2'
 import sys,re; f,l=sys.argv[1],sys.argv[2]; s=open(f).read()
 # valores do data-revela: o movimento.js só aceita estes
 s=re.sub(r'(<span class="c">… )[^<]*(</span>)', r'\1sobe | surge | lado | zoom | cortina\2', s)
-# saída do portão: o portao.js imprime em PT
-for a,b in [('DOES NOT PASS','NÃO PASSA'),('NO PASA','NÃO PASSA'),('>PASS<','>PASSA<'),('>PASA<','>PASSA<'),('# PASS<','# PASSA<'),('# PASA<','# PASSA<')]:
+# saída do portêo: o portao.js imprime em PT
+for a,b in [('DOES NOT PASS','NêO PASSA'),('NO PASA','NêO PASSA'),('>PASS<','>PASSA<'),('>PASA<','>PASSA<'),('# PASS<','# PASSA<'),('# PASA<','# PASSA<')]:
     s=s.replace(a,b)
-# blocos de código com saída da ferramenta ou valores aceitos pelo código: copiados do PT, sem tradução
+# blocos de código com saída da ferramenta ou valores aceitos pelo código: copiados do PT, sem traduçêo
 pt=open('guia/index.html').read()
 P=re.findall(r'<pre>.*?</pre>', pt, re.S); T=re.findall(r'<pre>.*?</pre>', s, re.S)
 if len(P)==len(T):
     for a,b in zip(P,T):
-        if any(m in a for m in ('portão visual','NÃO PASSA','data-revela','CTA na 1ª')): s=s.replace(b,a,1)
+        if any(m in a for m in ('portêo visual','NêO PASSA','data-revela','CTA na 1ª')): s=s.replace(b,a,1)
 else: print('AVISO: número de <pre> diferente', len(P), len(T))
 open(f,'w').write(s)
 PY2

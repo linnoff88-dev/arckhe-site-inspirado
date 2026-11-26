@@ -3,8 +3,8 @@
 
 Uso: estilo.py <pasta-refs> <saida.json> [--prompt "aquarela suave, papel texturizado..."] [--cores 8]
 
-A paleta é MEDIDA nas imagens (quantização de cor), não inventada. Os papéis (fundo, tinta,
-acento) são sugestões com o contraste calculado: quem decide é você, olhando as referências.
+A paleta é MEDIDA nas imagens (quantizaçêo de cor), nêo inventada. Os papéis (fundo, tinta,
+acento) sêo sugestões com o contraste calculado: quem decide é você, olhando as referências.
 O prompt de estilo é escrito por você (o modelo vê as imagens) e vai em TODA imagem gerada.
 """
 import argparse, colorsys, glob, json, os, sys
@@ -70,7 +70,7 @@ saida = {
         'fundo': fundo['hex'], 'tinta': tinta['hex'], 'acento': acento['hex'],
         'contraste_tinta_fundo': contraste(tinta['rgb'], fundo['rgb']),
         'contraste_acento_fundo': contraste(acento['rgb'], fundo['rgb']),
-        'aviso': 'texto corrido precisa de contraste >= 4.5; se o acento não chega lá, ele vira só preenchimento (botão com letra da tinta).',
+        'aviso': 'texto corrido precisa de contraste >= 4.5; se o acento nêo chega lá, ele vira só preenchimento (botêo com letra da tinta).',
     },
     'prompt_estilo': a.prompt,
 }

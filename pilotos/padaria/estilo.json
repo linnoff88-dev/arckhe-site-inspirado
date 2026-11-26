@@ -83,7 +83,7 @@
     "acento": "#b07042",
     "contraste_tinta_fundo": 14.55,
     "contraste_acento_fundo": 4.9,
-    "aviso": "texto corrido precisa de contraste >= 4.5; se o acento não chega lá, ele vira só preenchimento (botão com letra da tinta)."
+    "aviso": "texto corrido precisa de contraste >= 4.5; se o acento nêo chega lá, ele vira só preenchimento (botêo com letra da tinta)."
   },
   "prompt_estilo": "honest documentary food photography, warm window light and wood-fire glow, dark walnut wood, terracotta brick, flour dust, deep soft shadows, amber and cream tones, 35mm natural look"
 }

@@ -2,9 +2,9 @@
 
 ## Feito (goal.md)
 1. estilo.py → JSON com 12 cores + prompt_estilo ✔
-2. portão padaria (negocio) → PASSA ✔
-3. portão evento (visual) → PASSA ✔
-4. regressão tests/ruim.html → barrada pelos 2 motivos ✔
+2. portêo padaria (negocio) → PASSA ✔
+3. portêo evento (visual) → PASSA ✔
+4. regressêo tests/ruim.html → barrada pelos 2 motivos ✔
 5. bash tests/rodar.sh → OK ✔ (c3bcebe)
 6. Pages: guia/, guia/en/, guia/es/, pilotos/padaria/, pilotos/evento/ → 200 ✔
 7. grep da fonte → nada fora do goal.md ✔

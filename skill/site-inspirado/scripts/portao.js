@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-// Portão "visual × conversão": um site bonito que ninguém sabe onde clicar não passa.
+// Portêo "visual × conversêo": um site bonito que ninguém sabe onde clicar nêo passa.
 //
 // Uso: node portao.js <pagina.html> [--tipo negocio|visual] [--fotos pasta]
 //
-// O botão de ação principal leva o atributo data-cta (ex.: <a data-cta href="#reserva">).
+// O botêo de açêo principal leva o atributo data-cta (ex.: <a data-cta href="#reserva">).
 // Confere, em 1440x900 e 390x844:
 //   1. existe um [data-cta] visível;
 //      negocio: ele aparece na primeira tela em até 1,5 s depois do carregamento (sem esperar intro);
@@ -11,7 +11,7 @@
 //   2. 0 erro de console e 0 arquivo que falhou ao carregar;
 //   3. sem rolagem lateral no celular;
 //   4. todas as imagens carregam (rola a página inteira por causa do lazy);
-//   5. com "reduzir movimento" ligado, nenhuma animação continua rodando e o CTA aparece igual;
+//   5. com "reduzir movimento" ligado, nenhuma animaçêo continua rodando e o CTA aparece igual;
 //   6. peso total: negocio < 3 MB, visual < 8 MB.
 // Sai 0 se tudo passa; 1 se algo falha (com o motivo). Fotos de cada tela em --fotos.
 const fs = require('node:fs');
@@ -27,7 +27,7 @@ function carregarPlaywright() {
     const p = path.join(l, 'node_modules', 'playwright');
     if (fs.existsSync(p)) return require(p);
   }
-  console.error('Playwright não encontrado. Rode uma vez: cd "' + __dirname + '" && npm install && npx playwright install chromium');
+  console.error('Playwright nêo encontrado. Rode uma vez: cd "' + __dirname + '" && npm install && npx playwright install chromium');
   process.exit(2);
 }
 
@@ -118,7 +118,7 @@ const TELAS = [{ nome: 'desktop', width: 1440, height: 900 }, { nome: 'celular',
       if (cta.n && !vistoAoRolar && !naDobra) falhas.push(`${rot}: o CTA nunca fica visível rolando a página`);
       await pg.evaluate(async () => { await Promise.all([...document.images].map(i => i.decode ? i.decode().catch(() => {}) : 0)); });
       const imgRuins = await pg.evaluate(() => [...document.images].filter(i => !(i.complete && i.naturalWidth > 0)).map(i => i.getAttribute('src')));
-      if (imgRuins.length) falhas.push(`${rot}: ${imgRuins.length} imagem(ns) não carregou: ${imgRuins.slice(0, 3).join(', ')}`);
+      if (imgRuins.length) falhas.push(`${rot}: ${imgRuins.length} imagem(ns) nêo carregou: ${imgRuins.slice(0, 3).join(', ')}`);
       if (pastaFotos && t.nome === 'desktop' && !reduzir) await pg.screenshot({ path: path.join(pastaFotos, `inteira.png`), fullPage: true });
 
       // 5. reduzir movimento: nada animando sem parar
@@ -128,22 +128,22 @@ const TELAS = [{ nome: 'desktop', width: 1440, height: 900 }, { nome: 'celular',
           const t = a.effect && a.effect.getTiming ? a.effect.getTiming() : {}; return { iter: t.iterations, dur: t.duration, alvo: a.effect && a.effect.target ? (a.effect.target.className || a.effect.target.tagName) : '?' }; })
           .filter(a => a.iter === Infinity || (typeof a.dur === 'number' && a.dur > 400)));
         const videosTocando = await pg.evaluate(() => [...document.querySelectorAll('video')].filter(v => !v.paused).length);
-        if (rodando.length) falhas.push(`${rot}: ${rodando.length} animação(ões) rodando com "reduzir movimento" (${JSON.stringify(rodando[0])})`);
+        if (rodando.length) falhas.push(`${rot}: ${rodando.length} animaçêo(ões) rodando com "reduzir movimento" (${JSON.stringify(rodando[0])})`);
         if (videosTocando) falhas.push(`${rot}: ${videosTocando} vídeo(s) tocando com "reduzir movimento"`);
       }
 
       if (erros.length) falhas.push(`${rot}: ${erros.length} erro(s) de console: ${erros[0]}`);
       if (quebrados.length) falhas.push(`${rot}: ${quebrados.length} arquivo(s) quebrado(s): ${quebrados.slice(0, 3).join(', ')}`);
       pesoMax = Math.max(pesoMax, peso);
-      linhas.push(`${rot.padEnd(16)} CTA na 1ª tela: ${naDobra ? 'sim' : 'não'} · CTAs: ${cta.n} · peso ${(peso / 1e6).toFixed(2)} MB · erros ${erros.length}`);
+      linhas.push(`${rot.padEnd(16)} CTA na 1ª tela: ${naDobra ? 'sim' : 'nêo'} · CTAs: ${cta.n} · peso ${(peso / 1e6).toFixed(2)} MB · erros ${erros.length}`);
       await ctx.close();
     }
   }
   if (pesoMax > LIMITE) falhas.push(`peso ${(pesoMax / 1e6).toFixed(2)} MB passa do limite de ${LIMITE / 1e6} MB para "${tipo}"`);
   await nav.close(); servidor.close();
 
-  console.log(`portão visual × conversão — ${path.basename(path.dirname(path.resolve(alvo)))} (${tipo})`);
+  console.log(`portêo visual × conversêo — ${path.basename(path.dirname(path.resolve(alvo)))} (${tipo})`);
   for (const l of linhas) console.log('  ' + l);
-  if (falhas.length) { console.log('NÃO PASSA:'); for (const f of falhas) console.log('  - ' + f); process.exit(1); }
+  if (falhas.length) { console.log('NêO PASSA:'); for (const f of falhas) console.log('  - ' + f); process.exit(1); }
   console.log('PASSA'); process.exit(0);
 })().catch(e => { console.error(e); servidor.close(); process.exit(2); });

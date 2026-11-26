@@ -83,7 +83,7 @@
     "acento": "#ab9085",
     "contraste_tinta_fundo": 5.42,
     "contraste_acento_fundo": 2.82,
-    "aviso": "texto corrido precisa de contraste >= 4.5; se o acento não chega lá, ele vira só preenchimento (botão com letra da tinta)."
+    "aviso": "texto corrido precisa de contraste >= 4.5; se o acento nêo chega lá, ele vira só preenchimento (botêo com letra da tinta)."
   },
   "prompt_estilo": "loose watercolor on textured cotton paper, burgundy wine, pink ipe blossom, sage green and warm cream palette, thin gold ink accents, soft golden light, airy composition with paper margins, elegant wedding stationery illustration"
 }
