@@ -1,6 +1,6 @@
 # site-inspirado
 
-[![site-inspirado](guia/assets/banner-en.jpg)](https://inematds.github.io/site-inspirado/guia/en/)
+[![site-inspirado](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -13,11 +13,11 @@ invitation you’ve already printed, a photo of the shop). The AI asks questions
 match the style of the references, the page gets code-based transitions, and a gate checks that
 visitors can still find the button before you publish.
 
-[Complete guide](https://inematds.github.io/site-inspirado/guia/en/)
+[Complete guide](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 Live pilots:
-- **Event** (visual, fictional watercolor wedding): https://inematds.github.io/site-inspirado/pilotos/evento/
-- **Bakery** (business, order button on the first screen): https://inematds.github.io/site-inspirado/pilotos/padaria/
+- **Event** (visual, fictional watercolor wedding): https://linnoff88-dev.github.io/arckhe-/pilotos/evento/
+- **Bakery** (business, order button on the first screen): https://linnoff88-dev.github.io/arckhe-/pilotos/padaria/
 
 ## What’s included
 
@@ -58,7 +58,7 @@ cd skill/site-inspirado/scripts && npm install && npx playwright install chromiu
 Images: Codex CLI signed in to the subscription (`codex exec` with `image_gen`). Fallback: `--motor local` uses a
 flux2-klein server at `$IMG_API` (default `http://localhost:8000`) — heavy on the machine. Animating the images into video (Kling, Magnific, and similar tools) is optional and requires authorization for that service; without it, all motion is code.
 
-## How it differs from other INEMA kits
+## How it differs from other ARCKHÉ kits
 
 - **site-movimento**: the top becomes a continuous film that moves as you scroll.
 - **filmarca**: turns an existing website into a brand film.

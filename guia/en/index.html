@@ -10,9 +10,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>site-inspirado — turn your references into your website’s style</title>
 <meta name="description" content="A toolkit and skill for creating websites with a distinctive look: references become a measured style, AI asks before generating, Codex creates images in a consistent style, and a gate checks the button before publishing.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/site-inspirado/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/site-inspirado/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/site-inspirado/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -44,8 +44,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -113,9 +113,9 @@
   <a class="brand" href="#top"><span class="emoji">🎨</span> site-inspirado</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">What it is</a>
@@ -124,7 +124,7 @@
     <a class="sec" href="#medida">Visuals × conversions</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/inematds/site-inspirado" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/site-inspirado" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -137,7 +137,7 @@
       <p class="lead">Gather 2 to 5 images you like. AI asks questions before generating, creates every image in the same style, builds the page with motion, and checks that visitors can still find the button.</p>
       <div class="cta">
         <a class="btn" href="#guia">Start the guide</a>
-        <a class="btn ghost" href="https://github.com/inematds/site-inspirado" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/site-inspirado" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-en.jpg" alt="site-inspirado banner: printed references on a table becoming a web page"></figure>
@@ -203,7 +203,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Install the skill</h3>
     <p>Clone the repository and link the skill to Claude Code. <code>$T</code> is the <code>my-site</code> folder inside your home folder: put references in <code>my-site/refs</code>. <code>S</code> and <code>T</code> only apply in the terminal where you created them; in a new terminal, run the third line again. Run these lines in the folder where you want to store the toolkit (the <code>ln -s</code> command uses the current folder).</p>
-<pre><span class="k">git clone https://github.com/inematds/site-inspirado</span>
+<pre><span class="k">git clone https://github.com/linnoff88-dev/site-inspirado</span>
 <span class="k">mkdir -p ~/.claude/skills && ln -sfn "$PWD/site-inspirado/skill/site-inspirado" ~/.claude/skills/site-inspirado</span>
 <span class="k">S=~/.claude/skills/site-inspirado; T=~/my-site; mkdir -p $T/refs</span>
 <span class="k">cd $S/scripts && npm install && npx playwright install --with-deps chromium && cd -</span>  <span class="c"># gate browser</span></pre>
@@ -310,8 +310,8 @@
   <div class="wrap">
     <div class="pill">Claude Code</div><div class="pill">Codex image_gen</div><div class="pill">Playwright</div>
     <p style="margin-top:18px">site-inspirado · MIT ·
-      <a href="https://github.com/inematds/site-inspirado">inematds/site-inspirado</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/site-inspirado">linnoff88-dev/site-inspirado</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

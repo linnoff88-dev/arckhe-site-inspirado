@@ -7,7 +7,7 @@ description: >-
   ganha transições em código e passa por um portêo "visual × conversêo" antes de publicar.
   Gatilhos: "/site-inspirado", "site a partir dessas referências", "site no estilo desta imagem",
   "site do meu casamento/evento", "landing que nêo pareça IA", "site bonito com imagens próprias".
-  NêO é para: filme na rolagem (site-movimento), filme da marca (filmarca), guia de projeto INEMA
+  NêO é para: filme na rolagem (site-movimento), filme da marca (filmarca), guia de projeto ARCKHÉ
   (projetos-landing-guia).
 ---
 
@@ -19,8 +19,8 @@ referência visual → perguntas → pesquisa → imagens no mesmo estilo → p�
 
 `S=<pasta desta skill>` · `T=<pasta do site>` (uma por site; use a que a pessoa indicar, ex.: `~/meu-site`; sem indicaçêo, `~/projetos/output/site-inspirado/<slug>`). Trabalhe sempre dentro de `T`.
 
-> O site final NêO usa o visual INEMA (preto e amarelo). O estilo vem das referências da pessoa.
-> O visual INEMA vale só para o guia do kit.
+> O site final NêO usa o visual ARCKHÉ (preto e amarelo). O estilo vem das referências da pessoa.
+> O visual ARCKHÉ vale só para o guia do kit.
 
 ## Os 6 passos (em ordem; cada um tem portêo)
 

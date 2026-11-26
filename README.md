@@ -6,7 +6,7 @@
 </div>
 
 
-[![site-inspirado](guia/assets/banner.jpg)](https://inematds.github.io/site-inspirado/guia/)
+[![site-inspirado](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
@@ -19,11 +19,11 @@ convite que jêÂ¡ imprimiu, a foto da loja). A IA pergunta e pesquisa antes 
 saem no mesmo estilo das referêÂªncias, a pêÂ¡gina ganha transiêÂ§êÂµes em cêÂ³digo, e um portêÂ£o confere se o
 visitante ainda acha o botêÂ£o antes de publicar.
 
-[Guia completo](https://inematds.github.io/site-inspirado/guia/)
+[Guia completo](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 Pilotos no ar:
-- **Evento** (visual, casamento fictêÂ­cio em aquarela): https://inematds.github.io/site-inspirado/pilotos/evento/
-- **Padaria** (negêÂ³cio, botêÂ£o de encomenda na 1êÂª tela): https://inematds.github.io/site-inspirado/pilotos/padaria/
+- **Evento** (visual, casamento fictêÂ­cio em aquarela): https://linnoff88-dev.github.io/arckhe-/pilotos/evento/
+- **Padaria** (negêÂ³cio, botêÂ£o de encomenda na 1êÂª tela): https://linnoff88-dev.github.io/arckhe-/pilotos/padaria/
 
 ## O que tem aqui
 
@@ -65,7 +65,7 @@ Imagens: Codex CLI logado na assinatura (`codex exec` com `image_gen`). Reserva:
 flux2-klein em `$IMG_API` (padrêÂ£o `http://localhost:8000`) ê¢â¬â pesado, travou a mêÂ¡quina em 01/11 e 04/11/2026. VêÂ­deo animado a partir das imagens (Kling, Magnific e similares) êÂ© opcional e sêÂ³ com
 autorizaêÂ§êÂ£o para aquele serviêÂ§o; sem ele, todo o movimento êÂ© cêÂ³digo.
 
-## DiferenêÂ§a para outros kits INEMA
+## DiferenêÂ§a para outros kits ARCKHÉ
 
 - **site-movimento**: o topo vira um filme contêÂ­nuo que anda com a rolagem.
 - **filmarca**: transforma um site existente em filme da marca.

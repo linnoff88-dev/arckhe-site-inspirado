@@ -1,6 +1,6 @@
 # site-inspirado
 
-[![site-inspirado](guia/assets/banner-es.jpg)](https://inematds.github.io/site-inspirado/guia/es/)
+[![site-inspirado](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,11 +10,11 @@ site-inspirado es un kit con una skill para Claude Code que crea sitios que no p
 
 **Un sitio que no parece “hecho por IA”.** Entregas de 2 a 5 imágenes de referencia (de Pinterest, la invitación que ya imprimiste o una foto de la tienda). La IA pregunta e investiga antes de generar. Todas las imágenes siguen el mismo estilo de las referencias, la página incorpora transiciones en código y una prueba comprueba si el visitante todavía encuentra el botón antes de publicar.
 
-[Guía completa](https://inematds.github.io/site-inspirado/guia/es/)
+[Guía completa](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 Pilotos en línea:
-- **Evento** (visual, boda ficticia en acuarela): https://inematds.github.io/site-inspirado/pilotos/evento/
-- **Panadería** (negocio, botón de pedidos en la primera pantalla): https://inematds.github.io/site-inspirado/pilotos/padaria/
+- **Evento** (visual, boda ficticia en acuarela): https://linnoff88-dev.github.io/arckhe-/pilotos/evento/
+- **Panadería** (negocio, botón de pedidos en la primera pantalla): https://linnoff88-dev.github.io/arckhe-/pilotos/padaria/
 
 ## Qué incluye
 
@@ -56,7 +56,7 @@ Imágenes: Codex CLI con la suscripción (`codex exec` con `image_gen`). Alterna
 flux2-klein en `$IMG_API` (predeterminado `http://localhost:8000`) — pesado para la máquina. El video animado a partir de las imágenes (Kling, Magnific y similares) es opcional y requiere
 autorización para ese servicio; sin él, todo el movimiento se hace con código.
 
-## Diferencias con otros kits de INEMA
+## Diferencias con otros kits de ARCKHÉ
 
 - **site-movimento**: la parte superior se convierte en una película continua que avanza al desplazarse.
 - **filmarca**: transforma un sitio existente en una película de marca.

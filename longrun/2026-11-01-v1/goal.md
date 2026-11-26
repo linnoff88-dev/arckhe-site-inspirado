@@ -5,7 +5,7 @@ Kit + skill: referências visuais + briefing com perguntas → estilo único →
 → GitHub Pages. Dois pilotos: evento (visual) e padaria (negócio). Guia PT/EN/ES + portal.
 
 Restrições: sem API paga (Kling/Magnific nêo autorizados → vídeo de IA só como motor opcional);
-sem citar a fonte; pilotos NêO usam o visual INEMA (estilo vem das referências); autor inematds.
+sem citar a fonte; pilotos NêO usam o visual ARCKHÉ (estilo vem das referências); autor linnoff88-dev.
 
 ## Pronto quando (comando → saída esperada)
 
@@ -14,6 +14,6 @@ sem citar a fonte; pilotos NêO usam o visual INEMA (estilo vem das referências
 3. Idem `pilotos/evento/index.html --tipo visual` → sai 0 (CTA pode ficar abaixo da dobra, peso < 8 MB).
 4. Regressêo do portêo: `node .../portao.js tests/ruim.html --tipo negocio` → sai ≠ 0 (página sem CTA na dobra é barrada).
 5. `bash tests/rodar.sh` → "OK" (1–4 juntos).
-6. `curl -s -o /dev/null -w '%{http_code}'` em `https://inematds.github.io/site-inspirado/guia/`, `/guia/en/`, `/guia/es/`, `/pilotos/padaria/`, `/pilotos/evento/` → 200 cada.
+6. `curl -s -o /dev/null -w '%{http_code}'` em `https://linnoff88-dev.github.io/arckhe-/guia/`, `/guia/en/`, `/guia/es/`, `/pilotos/padaria/`, `/pilotos/evento/` → 200 cada.
 7. `grep -rniE "skool|ia-masters|topview|aparicio" --exclude-dir=longrun .` → nada.
 8. Revisor independente registrado no `revisor-nota.py` e card no portal (commit no portal).
